@@ -320,20 +320,21 @@ OrkutNostalgicIconSet.List = styled.ul`
 // ================================================================================================================
 const AlurakutLoginScreen = css`
   :root {
-    --backgroundPrimary: #D9E6F6;
-    --backgroundSecondary: #F1F9FE;
-    --backgroundTertiary: #FFFFFF;
-    --backgroundQuarternary: #BBCDE8;
-    --colorPrimary: #2E7BB4;
-    --colorSecondary: #388BB0;
-    --colorTertiary: #2F4A71;
-    --colorQuarternary: #D81D99;
+    --backgroundPrimary: #d9e6f6;
+    --backgroundSecondary: #f1f9fe;
+    --backgroundTertiary: #ffffff;
+    --backgroundQuarternary: #bbcde8;
+    --colorPrimary: #2e7bb4;
+    --colorSecondary: #388bb0;
+    --colorTertiary: #2f4a71;
+    --colorQuarternary: #d81d99;
     --textPrimaryColor: #333333;
-    --textSecondaryColor: #FFFFFF;
-    --textTertiaryColor: #5A5A5A;
-    --textQuarternaryColor: #C5C6CA;
+    --textSecondaryColor: #ffffff;
+    --textTertiaryColor: #5a5a5a;
+    --textQuarternaryColor: #c5c6ca;
     --commonRadius: 8px;
   }
+
   .loginScreen {
     padding: 16px;
     max-width: 1110px;
@@ -341,16 +342,16 @@ const AlurakutLoginScreen = css`
     --gap: 12px;
     --gutter: 16px;
     grid-gap: var(--gap);
-    grid-template-areas: 
-      "logoArea"
-      "formArea"
-      "footerArea";
-    @media(min-width: 860px) {
+    grid-template-areas:
+      'logoArea'
+      'formArea'
+      'footerArea';
+    @media (min-width: 860px) {
       grid-template-columns: 2fr 1fr;
-      grid-template-areas: 
-              "logoArea formArea"
-              "logoArea formArea"
-              "footerArea footerArea";
+      grid-template-areas:
+        'logoArea formArea'
+        'logoArea formArea'
+        'footerArea footerArea';
     }
     .logoArea {
       grid-area: logoArea;
@@ -364,7 +365,7 @@ const AlurakutLoginScreen = css`
       justify-content: center;
       align-items: center;
       min-height: 263px;
-      @media(min-width: 860px) {
+      @media (min-width: 860px) {
         min-height: 368px;
       }
       p {
@@ -404,7 +405,7 @@ const AlurakutLoginScreen = css`
         }
         &:first-child {
           min-height: 224px;
-          @media(min-width: 860px) {
+          @media (min-width: 860px) {
             min-height: 282px;
           }
         }
@@ -461,35 +462,36 @@ export const AlurakutStyles = css`
     width: 8px;
   }
   *::-webkit-scrollbar-track {
-    background: #f1f1f1; 
+    background: #f1f1f1;
   }
   *::-webkit-scrollbar-thumb {
-    background: #888; 
+    background: #888;
     border-radius: 10px;
   }
   *::-webkit-scrollbar-thumb:hover {
-    background: #555; 
+    background: #555;
   }
   a,
   button {
     cursor: pointer;
-    transition: .3s;
+    transition: 0.3s;
     outline: 0;
     &:hover,
     &:focus {
-      opacity: .8;
+      opacity: 0.8;
     }
     &:disabled {
       cursor: not-allowed;
-      opacity: .5;
+      opacity: 0.5;
     }
   }
-  input {
-    transition: .3s;
+  input,
+  textarea {
+    transition: 0.3s;
     outline: 0;
     &:disabled {
       cursor: not-allowed;
-      opacity: .5;
+      opacity: 0.5;
     }
     &:hover,
     &:focus {
@@ -497,4 +499,4 @@ export const AlurakutStyles = css`
     }
   }
   ${AlurakutLoginScreen}
-`; 
+`;
